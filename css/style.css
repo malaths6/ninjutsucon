@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 
 #header.header-scrolled,
@@ -149,6 +150,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
+}
+
+#logo.tiny h1{
+  height: 10px;
 }
 
 #header #logo h1 {

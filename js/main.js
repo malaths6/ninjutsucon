@@ -17,6 +17,7 @@ jQuery(document).ready(function( $ ) {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
+      $('#logo').addClass('tiny');
     } else {
       $('#header').removeClass('header-scrolled');
     }
@@ -24,6 +25,7 @@ jQuery(document).ready(function( $ ) {
 
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
+    $('#logo').addClass('tiny');
   }
 
   // Real view height for mobile devices
@@ -132,7 +134,7 @@ jQuery(document).ready(function( $ ) {
     responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
     }
   });
-
+  
   // Buy tickets select the ticket type on click
   $('#buy-ticket-modal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget);
@@ -140,5 +142,4 @@ jQuery(document).ready(function( $ ) {
     var modal = $(this);
     modal.find('#ticket-type').val(ticketType);
   })
-
 });
