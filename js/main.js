@@ -1,5 +1,10 @@
 jQuery(document).ready(function( $ ) {
 
+  // Change title
+  $(window).one('scroll', function() {
+    $('#logo h1').html('<a href="#intro">Ninjutsu<span>Con</span>');
+  });
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
