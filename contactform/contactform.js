@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "https://www.ninjutsucon.com/contactform/contactform.php",
+      url: "contactform/contactform.php",
       data: str,
       success: function(msg) {
         // alert(msg);
